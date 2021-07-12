@@ -1,0 +1,448 @@
+            html,
+            body {
+                margin: 0%;
+                box-sizing: border-box;
+                overflow-x: hidden;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            
+            * {
+                box-sizing: content-box;
+                margin: 0px;
+                padding: 0;
+            }
+            /*-------Variables-------*/
+            
+            $dark: rgb(29, 29, 29);
+            $hover: rgb(233, 144, 144);
+            $light: antiquewhite;
+            /*--x----Variables---x---*/
+            /*--------NAVBAR-------*/
+            
+            .navbar {
+                background-color: $dark;
+                box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+                height: 80px;
+            }
+            
+            .navbar-brand {
+                padding-right: 80px;
+                font-size: 40px;
+                color: $light;
+                font-weight: bold;
+            }
+            
+            .navbar-brand:hover {
+                color: rgb(233, 144, 144);
+            }
+            
+            .nav-link {
+                color: $light;
+                margin: 10px;
+                font-size: 22px;
+            }
+            
+            .nav-item-account {
+                list-style-type: none;
+                padding: 10px 10px;
+            }
+            
+            .nav-item-account:hover {
+                background-color: antiquewhite;
+                border-radius: 40px;
+                color: $dark;
+            }
+            
+            .nav-item-account a:hover {
+                color: $dark;
+                text-decoration: none;
+            }
+            
+            .nav-link-account {
+                color: $light;
+                margin: 10px;
+                font-size: 20px;
+            }
+            
+            .collapsing {
+                -webkit-transition: none;
+                transition: none;
+                display: none;
+            }
+            /*--Dropdown--*/
+            
+            .dropdown-menu {
+                background-color: $dark;
+                margin-top: 20px;
+            }
+            
+            .dropdown-item {
+                color: $light;
+                font-size: 20px;
+            }
+            
+            .dropdown-item:hover {
+                width: 76%;
+            }
+            
+            .nav-item.dropdown {
+                cursor: pointer;
+            }
+            /*---x---NAVBAR---x---*/
+            /*-------RESPONSIVE MENU-------*/
+            
+            .navbar-collapse.collapse.show {
+                background-color: $dark;
+                margin-top: 0px;
+                /*transition: 0.1s ease-in;*/
+            }
+            /*---x---RESPONSIVE MENU---x---*/
+            /*-------Main Container-------*/
+            
+            .main-container {
+                background: url('../assets/main-bg.jpg') no-repeat top center;
+                background-size: cover;
+                position: block;
+                height: 100vh;
+                justify-content: center;
+                display: flex;
+                margin-top: 0px;
+                align-items: center;
+            }
+            
+            h1 {
+                font-size: 20vh;
+            }
+            
+            .main-title {
+                text-shadow: 4px 4px 3px rgb(5, 5, 5);
+                color: $light;
+                font-size: 20px;
+            }
+            
+            .coll-btn {
+                border: 4px solid $light;
+            }
+            
+            a.coll-btn {
+                color: $light;
+                text-decoration: none;
+                font-size: 30px;
+                letter-spacing: 0.2rem;
+            }
+            
+            a.coll-btn:hover {
+                background-color: $dark;
+                color: $light;
+                text-decoration: none;
+            }
+            
+            .fas.fa-chevron-circle-right {
+                margin-left: 20px;
+                margin-top: 25px;
+            }
+            /*---x---Main Container---x---*/
+            /*--------Section-1--------*/
+            
+            .section-fluid {
+                background-color: $dark;
+                padding-bottom: 10vh;
+            }
+            
+            .title-section {
+                color: $light;
+                font-family: 'Dancing Script', cursive;
+                font-size: 60px;
+                letter-spacing: 0.1rem;
+            }
+            
+            .p-section {
+                color: $light;
+                font-size: 20px;
+                line-height: 2.8rem;
+            }
+            /*-----CAROUSEL-----*/
+            
+            h5 {
+                font-size: 100px;
+                font-family: Roboto;
+                letter-spacing: 1.2rem;
+                text-shadow: 4px 4px 3px rgb(5, 5, 5);
+                opacity: 0.7;
+            }
+            
+            .p-carousel {
+                font-size: 30px;
+                text-shadow: 4px 4px 3px rgb(5, 5, 5);
+            }
+            
+            .carousel-caption {
+                padding-bottom: 15%;
+            }
+            /*--x--CAROUSEL--x--*/
+            /*---x----Section-1----x---*/
+            /*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+            /*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+            /* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+            /* Small devices (landscape phones, 576px and up) */
+            
+            @media (max-width: 1155px) {
+                h1 {
+                    font-size: 10vh;
+                }
+                .login-resp {
+                    display: none;
+                }
+                .nav-item-account a:hover {
+                    color: $dark;
+                    text-decoration: none;
+                }
+                .nav-item-account {
+                    color: $dark;
+                    text-decoration: none;
+                    padding-left: 20px;
+                }
+                .navbar-brand {
+                    padding-right: 20px;
+                }
+                a.coll-btn {
+                    color: $light;
+                    text-decoration: none;
+                    font-size: 18px;
+                    letter-spacing: 0.2rem;
+                }
+                /*--Carousel--*/
+                h5 {
+                    font-size: 60px;
+                    letter-spacing: 1.2rem;
+                    text-shadow: 4px 4px 3px rgb(5, 5, 5);
+                    opacity: 0.7;
+                }
+                .p-carousel {
+                    font-size: 30px;
+                    text-shadow: 4px 4px 3px rgb(5, 5, 5);
+                }
+                .carousel-caption {
+                    padding-bottom: 10%;
+                }
+                /*--x--Carouselx--x--*/
+            }
+            /* Extra large devices (large desktops, 1200px and up) */
+            
+            @media (max-width: 1072px) {
+                .navbar-brand {
+                    padding-right: 10px;
+                }
+                .nav-link {
+                    margin: 5px;
+                    font-size: 20px;
+                }
+                .nav-link:hover {
+                    margin: 5px;
+                }
+                /*--Carousel--*/
+                h5 {
+                    font-size: 60px;
+                    letter-spacing: 1.2rem;
+                    text-shadow: 4px 4px 3px rgb(5, 5, 5);
+                    opacity: 0.7;
+                }
+                .p-carousel {
+                    font-size: 30px;
+                    text-shadow: 4px 4px 3px rgb(5, 5, 5);
+                }
+                .carousel-caption {
+                    padding-bottom: 20%;
+                }
+                /*--x--Carouselx--x--*/
+            }
+            /* Extra large devices (large desktops, 1200px and up) */
+            
+            @media (max-width: 991px) {
+                .account-list {
+                    justify-content: center;
+                    padding-bottom: 20px;
+                }
+                .dropdown-item:hover {
+                    width: 100%;
+                }
+                .nav-item {
+                    margin-left: 20px;
+                }
+                .login-resp {
+                    display: inline-block;
+                }
+                .dropdown-divider {
+                    margin-left: -20px;
+                }
+                .dropdown-item:hover {
+                    background-color: $light;
+                    width: 90%;
+                }
+                /*--Carousel--*/
+                h5 {
+                    font-size: 60px;
+                    letter-spacing: 1.2rem;
+                    text-shadow: 4px 4px 3px rgb(5, 5, 5);
+                    opacity: 0.7;
+                }
+                .p-carousel {
+                    font-size: 30px;
+                    text-shadow: 4px 4px 3px rgb(5, 5, 5);
+                }
+                .carousel-caption {
+                    padding-bottom: 10%;
+                }
+                /*--x--Carouselx--x--*/
+            }
+            /* Extra large devices (large desktops, 1200px and up) */
+            
+            @media (min-width: 576px) {}
+            /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+            
+            @media (min-width: 768px) {}
+            /* Large devices (desktops, 992px and up) */
+            
+            @media (min-width: 1200px) {}
+            /* Set width to make card deck cards 100% width */
+            
+            @media (min-width: 1155px) {}
+            /* Set width to make card deck cards 100% width */
+            
+            @media (max-width: 950px) {}
+            
+            .owl-container {
+                margin-top: 0px;
+                background-color: none;
+                width: 100%;
+                height: 90vh;
+            }
+            
+            .blog-content {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 80%;
+                margin: 5rem 2rem;
+                box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+                background: transparent;
+            }
+            
+            .blog-title {
+                padding-top: .2rem;
+                margin-bottom: 20px;
+            }
+            
+            .blog-title h3 {
+                font-size: 40px;
+                padding-bottom: .6rem;
+            }
+            
+            .btn-blog {
+                padding: .7rem 2rem;
+                background: $dark;
+                margin: .5rem;
+                font-size: 25px;
+                cursor: pointer;
+                color: white;
+                width: 40%;
+                border-radius: 20px;
+                margin-top: 0.4rem;
+            }
+            
+            .btn-blog:hover {
+                background: rgb(0, 0, 0);
+                background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(62, 63, 65, 1) 56%, rgba(96, 100, 107, 1) 100%);
+            }
+            
+            .bottom-title {
+                display: block;
+                padding: 1.2rem 0;
+                font-size: 20px;
+                letter-spacing: .2rem;
+            }
+            
+            .owl-nav .owl-prev .owl-nav-prev,
+            .owl-nav .owl-next .owl-nav-next {
+                color: var(--text-gray);
+                background-color: transparent;
+                font-size: 2rem;
+                border: none;
+            }
+            
+            .owl-nav .owl-prev .owl-nav-prev:hover,
+            .owl-nav .owl-next .owl-nav-next:hover {
+                color: var(--text-gray);
+                background-color: transparent;
+                font-size: 2rem;
+                border: none;
+            }
+            
+            .owl-theme .owl-nav [class*='owl-']:hover {
+                background: transparent;
+                color: var(--text-gray)
+            }
+            
+            h3 {
+                margin: .2rem;
+            }
+            
+            .section-carousel-title {
+                font-size: 130px;
+                text-decoration: underline;
+                padding-top: 5vh;
+            }
+            
+            .undertitle {
+                font-size: 40px;
+            }
+            /*-------------Modal------------*/
+            
+            .modal-header {
+                background-color: $light;
+            }
+            
+            div.modal-title {
+                font-size: 30px;
+                color: $dark;
+            }
+            
+            .modal-content {
+                justify-content: center;
+            }
+            
+            .modal-dialog {
+                justify-content: center;
+            }
+            
+            .modal {
+                background-color: $dark;
+                opacity: 0.95;
+            }
+            
+            .btn {
+                border: none;
+            }
+            
+            .form-group {
+                padding-right: 25px;
+            }
+            
+            .modal-body {
+                font-size: 25px;
+            }
+            
+            .form-check-input {
+                margin-top: 13px;
+            }
+            /*----x--------Modal-------x----*/
